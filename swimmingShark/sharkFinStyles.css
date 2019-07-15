@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
-#loadImage{
+
+#container{ /**Center the loading animation**/
 
     max-width: 20%;
     min-width: 10%;
-
-    /**Center the image**/
-    margin: 0;
     transform: translate(-50%, -50%);
     position: absolute;
     top: 50%;
@@ -15,3 +13,45 @@
 
 
 }
+#waves{
+    position: relative;
+    width: 100%;
+
+
+
+}
+#fin{
+    top: 15%;
+    left: 0;
+    position: absolute;
+    width: 25%;
+    animation: move 5s infinite;
+
+
+}
+@-webkit-keyframes move
+{
+    from {
+        left: 0;
+    }
+    to {
+        left: 75%;
+    }
+}
+@keyframes move
+{
+
+
+    0%{left: 0;}
+
+
+    50%{left: 75%;
+        transform: rotateY(0deg);}
+    50.1%{transform: rotateY(180deg);}
+    100%{left: 0;
+        transform: rotateY(180deg);}
+
+
+}
+
+

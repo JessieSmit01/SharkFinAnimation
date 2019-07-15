@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Swimming shark fin</title>
-    <script src="Animation.js"></script>
+
     <link rel="stylesheet" href="sharkFinStyles.css">
 
 </head>
 <body>
-    <img id="loadImage" src="frames/SharkFinSpinner1.png"/> <!-- Initially set the first frame to be the source of the image -->
-    <script>
-        let frames = new Array(34); //create a new array to hold all animation frames
-        for(let i = 1; i < 35; i++) //add the source for each frame into the frames array
-        {
-            frames[i-1] = "frames/SharkFinSpinner" + i + ".png";
-        }
-        let fin = new Animation(frames); //instantiate a new Animation object
-        fin.playAnimation(); //go through each frame and create an animation.
-
-    </script>
 
 
+
+<div id="container">
+    <a><img id="waves" src="images/waves.png" alt="waves"/></a>
+    <a><img id="fin" src="images/sharkFin.png" alt="fin"></a>
+</div>
 
 </body>
 </html>
