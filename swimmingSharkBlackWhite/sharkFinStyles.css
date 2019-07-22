@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/**
+
+    Author- Jessie Smith
+
+ */
+#shark-fin-container{ /**Center the loading animation**/
+
+    max-width: 30%;
+
+    transform: translate(-50%, -50%);
+
+    /*Center the loading animation on page*/
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+}
+
+/*
+
+    water image
+
+ */
+
+#waves{
+
+    position: relative;
+
+    width: 75%;
+
+}
+
+/*
+
+    Shark fin image
+
+ */
+
+#fin{
+    position: absolute;
+
+    width: 25%;
+
+    animation: move 5s infinite; /*Play animation for 5 seconds and continuously loop through.*/
+
+}
+
+
+
+/**
+
+    Animate the shark fin moving back and forth
+
+ */
+
+@keyframes move
+
+{
+
+    0%{left: 5%;}
+
+    50%{left: 49%;
+
+        transform: rotateY(0deg);}
+
+    50.1%{transform: rotateY(180deg);} /*Flip shark fin 180 degrees to make it look like it is swimming back to the starting position*/
+
+    100%{left: 3%;
+
+        transform: rotateY(180deg);} /*Keep shark fin flipped until the end of the animation.*/
+
+}
+
+
